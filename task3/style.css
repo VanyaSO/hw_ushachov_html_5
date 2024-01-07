@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #FEE94F;
+}
+
+.icons__block {
+    margin-top: 50px;
+}
+
+.icons__block-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.icons__block-content {
+    /* position: absolute; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* top: 35%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.icons__block-img {
+    position: absolute;
+}
+
+.icons__block-img:nth-child(1){
+    left: calc(50% - 200px);
+    top: 120%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    max-width: 100px;   
+    animation: move1 2s linear 0s normal forwards;
+}
+.icons__block-img:nth-child(2){
+    left: calc(50% - 100px);
+    top: 120%;
+    max-width: 150px;   
+    transform: translate(-50%, -50%) rotate(-20deg);
+    animation: move2 2s linear 0.5s forwards;
+}
+.icons__block-img:nth-child(3){
+    left: calc(50% + 100px);
+    top: 120%;
+    max-width: 150px;   
+    transform: translate(-50%, -50%) rotate(20deg);
+    animation: move3 2s linear 1s forwards;
+}
+.icons__block-img:nth-child(4){
+    left: calc(50% + 200px);
+    top: 120%;
+    max-width: 100px;   
+    transform: translate(-50%, -50%) rotate(20deg);
+    animation: move4 2s linear 1.5s forwards;
+}
+
+.icons__block-img:nth-child(5){
+    left: 50%;
+    top: 120%;
+    max-width: 100px;   
+    transform: translate(-50%, -50%) rotate(90deg);
+    animation: move5 2s linear 2s forwards;
+}
+
+
+@keyframes move1 {
+    0% {
+        top: 120%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        top: 120%; 
+    }
+    100% {
+        top: calc(50% - 100px); 
+    }
+}
+
+@keyframes move3 {
+    0% {
+        top: 120%; 
+    }
+    100% {
+        top: calc(50% - 100px); 
+    }
+}
+
+@keyframes move4 {
+    0% {
+        top: 120%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+@keyframes move5 {
+    0% {
+        top: 120%;
+    }
+
+    100% {
+        top: calc(50% + 100px);
+    }
+}
